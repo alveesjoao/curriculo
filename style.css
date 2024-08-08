@@ -73,7 +73,6 @@ main {
     height: 85vh;
     overflow: auto;
     position: relative;
-    border: 2px solid red
 }
 
 .bg-color-1 {
@@ -90,9 +89,11 @@ main {
 
 .main-aboutme {
     position: absolute;
+    display: flex;
+    justify-content: center;
     left: 50%;
     top: 50%;
-    transform: translate(-90%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .aboutme-left {
@@ -122,7 +123,7 @@ main {
     margin: 0;
     padding: 0;
     text-align: center;
-    letter-spacing: normal;
+    line-height: 25px;
     color: #fff;
 }
 
@@ -157,4 +158,57 @@ main {
 
 .aboutme-l-footer a img {
     width: 30px;
+}
+
+.aboutme-right {
+    width: 375px;
+}
+
+.aboutme-right-header {
+    margin-left: 25px;
+}
+
+.aboutme-right h1 {
+    font-size: 100px;
+}
+
+.aboutme-right span {
+    font-size: 25px;
+    font-weight: 400;
+    padding: 5px 10px 5px 10px;
+}
+
+.buttons-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-right button {
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    margin: 20px;
+    background-color: #1500ff;
+}
+
+.buttons-right button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.about-me-paragraphs {
+    margin: 25px;
+    line-height:1.5;
+    font-size: 15px;
+}
+
+.about-me-paragraphs .p-1 {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.about-me-paragraphs .p-2 {
+    text-align: justify;
 }
