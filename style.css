@@ -161,7 +161,6 @@ main {
 .aboutme-right {
     width: 375px;
     max-width: 100%;
-    overflow-wrap: break-word;
 }
 
 .aboutme-right-header {
