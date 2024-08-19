@@ -13,4 +13,4 @@ window.onscroll = () => {
             })
         }
     })
-}
+};
