@@ -5,6 +5,7 @@
     padding: 0;
     font-family: Poppins, sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 html, body {
@@ -21,6 +22,10 @@ header {
     background-color: whitesmoke;
 }
 
+section {
+    min-height: 100vh;
+}
+
 .header-name {
     display: flex;
     align-items: center;
@@ -28,6 +33,11 @@ header {
 
 .header-name h1 {
     font-size: 26px;
+}
+
+.header-name a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .header-name h2 {
@@ -73,18 +83,6 @@ main {
     height: 85vh;
     overflow: auto;
     position: relative;
-}
-
-.bg-color-1 {
-    width: 45%;
-    height: 100vh;
-    background-color: #0b0754;
-}
-
-.bg-color-2 {
-    width: 55%;
-    height: 100%;
-    background-color: #fff;
 }
 
 .main-aboutme {
@@ -212,3 +210,69 @@ main {
 .about-me-paragraphs .p-2 {
     text-align: justify;
 }
+
+.work-experience, .skills, .education {
+    margin: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 20px;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 60%;
+    height: 250px;
+    margin: 20px auto;
+}
+
+#topic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.left {
+    width: 40%;
+    color: whitesmoke;
+}
+
+.left h1 {
+    color: #150d74;
+}
+
+.left span, h2 {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.right {
+    width: 60%;
+    color: #555;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.education .left {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.skills .right, .left {
+    width: 50%;
+    color: #555;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+
+
+
+
