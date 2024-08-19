@@ -160,6 +160,8 @@ main {
 
 .aboutme-right {
     width: 375px;
+    max-width: 100%;
+    overflow-wrap: break-word;
 }
 
 .aboutme-right-header {
@@ -168,12 +170,16 @@ main {
 
 .aboutme-right h1 {
     font-size: 100px;
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
 .aboutme-right span {
     font-size: 25px;
     font-weight: 400;
     padding: 5px 10px 5px 10px;
+    display: block;
+    word-wrap: break-word;
 }
 
 .buttons-right {
@@ -270,6 +276,118 @@ main {
     color: #555;
     line-height: 1.5;
     font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .nav-list li {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .main-aboutme {
+        flex-direction: column;
+        top: 10%;
+        transform: translateX(-50%);
+    }
+
+    .aboutme-left, .aboutme-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .profile-pic {
+        margin: 0 auto;
+        width: 150px;
+    }
+
+    .aboutme-right h1 {
+        font-size: 40px;
+    }
+
+    .aboutme-right span {
+        font-size: 18px;
+    }
+
+    .about-me-paragraphs {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .container .left, .container .right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container .left h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav-list {
+        margin: 0;
+        padding: 0;
+    }
+
+    .aboutme-left, .aboutme-right {
+        width: 100%;
+        padding: 20px;
+        box-shadow: none;
+    }
+
+    .about-me-paragraphs {
+        display: none;
+    }
+
+
+    .profile-pic {
+        width: 120px;
+    }
+
+    .aboutme-right h1 {
+        font-size: 40px;
+    }
+
+    .aboutme-right span {
+        font-size: 16px;
+    }
+
+    .buttons-right button {
+        padding: 8px 15px;
+        margin: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .work-experience, .skills, .education {
+        margin: 20px 10px;
+    }
 }
 
 
